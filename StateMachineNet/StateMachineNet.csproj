@@ -4,7 +4,7 @@
         <Nullable>enable</Nullable>
         <LangVersion>latest</LangVersion>
         <TargetFrameworks>netstandard1.0;netstandard1.1;netstandard2.0;netstandard2.1</TargetFrameworks>
-        <Version>0.0.0</Version>
+        <Version>1.0.0</Version>
         <Authors>UnterrainerInformatik, github@appleneko2001</Authors>
         <Description>Modded FiniteStateMachine by github@appleneko2001. Unofficially added .NetStandard 1.0, 1.1, 2.0 and 2.1 target support. Official repo: https://github.com/UnterrainerInformatik/FiniteStateMachine</Description>
         <PackageProjectUrl>https://github.com/appleneko2001/FiniteStateMachine</PackageProjectUrl>

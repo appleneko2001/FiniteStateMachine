@@ -32,7 +32,7 @@ jobs:
         run: dotnet test --no-restore --verbosity normal $TEST_PROJECT
 
       - name: Pack
-        run: dotnet pack --no-build --configuration Release $LIB_PROJECT/$LIB_PROJECT.csproj --output .
+        run: dotnet pack --no-build -p:PatchNumber=$GITHUB_RUN_NUMBER --configuration Release $LIB_PROJECT/$LIB_PROJECT.csproj --output .
 
       - name: Push package to GitHub
         run: dotnet nuget push *.nupkg --skip-duplicate --source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json --api-key ${{ secrets.PACKAGE_UPLOAD_SECRET }}
